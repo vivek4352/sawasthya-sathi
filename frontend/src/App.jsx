@@ -248,10 +248,11 @@ function App() {
       getUserLocation(); // Automatically get location for hospital matching
     } catch (err) {
       clearInterval(statusInterval);
+      const errorMsg = err.response?.data?.detail || err.message || "Unknown Error";
       if (err.response?.status === 429) {
-        setApiError("High demand - using advanced local triage fallback.");
+        setApiError(`High demand (${errorMsg}) - using advanced local triage fallback.`);
       } else {
-        setApiError("AI synthesis unavailable. Using clinical safety protocols.");
+        setApiError(`Clinical connection issue: ${errorMsg}. Using local safety protocols.`);
       }
     } finally {
       setLoading(false);
