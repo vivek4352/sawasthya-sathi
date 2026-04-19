@@ -239,7 +239,7 @@ function App() {
       const response = await axios.post(`${API_BASE}/triage`, {
         name: name,
         age: age || "Not set",
-        history: history_tags_str,
+        history: historyTags.join(", "),
         symptoms: symptomsToUse,
         chat_history: chatHistory
       }, { timeout: 25000 });
