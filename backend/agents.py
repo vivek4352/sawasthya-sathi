@@ -27,7 +27,7 @@ class GeminiKeyManager:
         self.cooling_keys[key] = time.time() + 86400 # 24 hours
         print(f"Key {key[:10]}... marked as DEAD (Expired/Invalid).")
 
-    def get_client(self) -> Optional[tuple[genai.Client, str]]:
+    def get_client(self) -> Optional[tuple[Any, str]]:
         if not self.keys: return None
         
         start_idx = self.current_idx
@@ -137,7 +137,7 @@ class ClarificationAgent(BaseAgent):
             try:
                 res = key_manager.get_client()
                 if not res:
-                    raise Exception("No API keys configured.")
+                    return ChatResponse(message="Hello! I am Swasthya Sathi. Please describe your symptoms for a clinical assessment.", is_ready_for_triage=False)
                 client, key = res
 
                 response = client.models.generate_content(
@@ -225,7 +225,8 @@ class UnifiedTriageAgent(BaseAgent):
             try:
                 res = key_manager.get_client()
                 if not res:
-                    raise Exception("No API keys configured.")
+                    # Signal orchestrator to use immediate local fallback
+                    raise ValueError("FALLBACK: No API keys configured.")
                 client, key = res
                 
                 response = client.models.generate_content(
