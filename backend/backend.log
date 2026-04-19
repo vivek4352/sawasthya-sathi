@@ -1,0 +1,36 @@
+INFO:     Started server process [64900]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52125 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52141 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52141 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52208 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52269 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52269 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52298 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52331 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52549 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52549 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52600 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52616 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52666 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52783 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52783 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52896 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52925 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52939 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52939 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53054 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53119 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53119 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53198 - "OPTIONS /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53198 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53200 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53200 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53209 - "POST /triage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53216 - "POST /triage HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [64900]
